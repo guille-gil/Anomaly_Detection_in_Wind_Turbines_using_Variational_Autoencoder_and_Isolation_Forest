@@ -11,14 +11,14 @@ Wind turbines operate in highly dynamic environments, making static fault detect
 The study involves two main evaluation scenarios:
 
 ### 1. **Controlled Environment**
-- Focus: Benchmarked datasets simulate clean and balanced scenarios.
-- Datasets:
-  - **Training**: Healthy-only samples (10,000 observations).  
-  - **Validation/Testing**: Balanced datasets (6,500 healthy and faulty samples each).  
-- Objective: Evaluate model performance under ideal conditions and conduct sensitivity analyses for class imbalance and threshold variability.
+- NREL Wind Turbine Gearbox Vibration Condition Monitoring Benchmarking Dataset used.
+- Dataset Splits:
+  - **Training**: Healthy-only samples (around 10,000 observations).  
+  - **Validation/Testing**: Balanced datasets (around 6,500 healthy and faulty samples each).  
+- Objective: Evaluate model performance under ideal conditions and conduct sensitivity analyses for class imbalance and referene proportions.
 
 ### 2. **Operational Environment**
-- Focus: Real-world wind turbine datasets with noise, unlabeled data, and evolving fault conditions.
+- Two N131/3.9MW turbines in South Netherlands
 - Datasets:
   - **Turbine 1**: A Nordex N131 turbine with a reported gearbox fault (oil leakage and bearing scratches).  
   - **Turbine 2**: Another Nordex N131 turbine confirmed healthy over the same period.  
