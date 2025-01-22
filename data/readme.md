@@ -1,7 +1,5 @@
 # Dataset Description for Controlled and Operational Environments
 
-This document outlines the datasets used in the study, categorized into **controlled environments** and **operational environments**.
-
 ---
 
 ## Controlled Environment Datasets
