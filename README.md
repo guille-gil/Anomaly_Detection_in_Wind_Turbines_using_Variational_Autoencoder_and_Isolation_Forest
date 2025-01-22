@@ -1,4 +1,4 @@
-# Wind Turbine Fault Detection: VAE-IF Hybrid Model
+# [Title Pending]
 
 This repository provides the implementation of a study that evaluates static thresholds (ISO 10816-21) for vibration-based fault detection in wind turbines and compares their performance to a hybrid machine learning model combining Variational Autoencoder (VAE) and Isolation Forest (IF).
 
