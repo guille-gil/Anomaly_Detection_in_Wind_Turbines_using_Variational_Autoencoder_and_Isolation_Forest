@@ -41,14 +41,14 @@ and 25.6 kHz, depending on their location
 
 ### Files:
 1. **`Turbine1.parquet`**
-   - Data corresponds to a **Nordex N131 turbine** operating between **25th May 2027** and **31st August 2023**.
+   - Data corresponds to a **Nordex N131 turbine**, collected between **25th May 2027** and **31st August 2023**.
    - On **27th August 2023**, this turbine reported a **failure in the gearbox**, specifically:
      - **Scratches in the outer bearing.**
      - **Oil leakage.**
    - This dataset captures a mix of healthy operations and fault progression leading to the gearbox failure.
 
 2. **`Turbine2.parquet`**
-   - Data corresponds to another **Nordex N131 turbine** operating during the **same time period** as Turbine1.
+   - Data corresponds to another **Nordex N131 turbine** , colleted during the **same time period** as Turbine1.
    - This turbine remained **completely healthy** throughout the observation period.
    - Used as a representative dataset for healthy conditions in real-world scenarios and for training models in operational settings.
 
