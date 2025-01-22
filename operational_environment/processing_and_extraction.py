@@ -33,8 +33,8 @@ import logging
 import time
 
 # Define paths
-raw_data_dir = "/Users/guillermogildeavallebellido/Desktop/isweargodbethelast/raw"
-processed_data_dir = "/Users/guillermogildeavallebellido/Desktop/isweargodbethelast/preprocessed"
+raw_data_dir = "/Users/guillermogildeavallebellido/Desktop/raw"
+processed_data_dir = "/Users/guillermogildeavallebellido/Desktop/preprocessed"
 os.makedirs(processed_data_dir, exist_ok=True)
 
 # Configure logging
