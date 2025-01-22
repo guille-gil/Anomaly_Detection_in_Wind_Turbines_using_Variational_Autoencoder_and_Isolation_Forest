@@ -6,7 +6,12 @@ This document outlines the datasets used in the study, categorized into **contro
 
 ## Controlled Environment Datasets
 
-The controlled environment datasets are synthetic or laboratory-collected data used for initial model development, validation, and testing in a well-defined and noise-free setting. These datasets consist of labeled samples with balanced distributions for robust evaluation.
+The controlled-environment data is sourced from NREL (Sheng, 2012b). This benchmarking CM dataset
+features vibration samples collected from two gearboxes installed on a 750 kW three-bladed wind turbine—one
+healthy and one faulty. The damaged gearbox underwent controlled testing in a specialized facility after
+field damage, with several sensors mounted on the casings of affected components to detect faults such as
+scuffing, dents, or corrosion. Subsequently, the healthy gearbox underwent a similar test for comparability.
+Vibration samples from both gearboxes were collected using piezoelectric accelerometers sampling at 40 kHz.
 
 ### Files:
 1. **`train_healthy.parquet`**
@@ -28,7 +33,11 @@ The controlled environment datasets are synthetic or laboratory-collected data u
 
 ## Operational Environment Datasets
 
-The operational environment datasets are collected from real-world turbines, introducing realistic complexities such as environmental noise, varying operating conditions, and temporal dependencies. These datasets reflect real-world turbine behavior over an extended period.
+The operational dataset features two Nordex N131 turbines located in the south of the Netherlands. These
+turbines, rated at 3.9 MW, are equipped with sensors that collect short data snapshots at intervals ranging
+from 6 to 12 hours, which are merged to form a continuous time series. The sensors, which are piezoelectric
+accelerometers, are distributed throughout the drivetrain and sample data at frequencies between 12.8 kHz
+and 25.6 kHz, depending on their location
 
 ### Files:
 1. **`Turbine1.parquet`**
