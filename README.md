@@ -1,23 +1,23 @@
-# Navigating Operational Challenges: Combining Variational Autoencoder and Isolation Forest for Adaptive Fault Detection in Wind Turbines
+## Navigating Operational Challenges: Combining Variational Autoencoder and Isolation Forest for Adaptive Fault Detection in Wind Turbines
 
-This repository provides the implementation of a study that evaluates static thresholds (ISO 10816-21) for vibration-based fault detection in wind turbines and compares their performance to a hybrid machine learning model combining Variational Autoencoder (VAE) and Isolation Forest (IF).
+This repository contains the implementation of a study that addresses operational challenges in wind turbine fault detection by comparing static thresholds (ISO 10816-21) with a hybrid unsupervised machine learning model using Variational Autoencoder (VAE) and Isolation Forest (IF).
 
 ---
 
-## Overview
+### Overview
 
 Wind turbines operate in highly dynamic environments, making static fault detection thresholds prone to inaccuracies. This study addresses these limitations by introducing a fully unsupervised VAE-IF hybrid model capable of adapting to variability in operational conditions and data characteristics, such as imbalance and noise. 
 
 The study involves two main evaluation scenarios:
 
-### 1. **Controlled Environment**
+#### 1. **Controlled Environment**
 - NREL Wind Turbine Gearbox Vibration Condition Monitoring Benchmarking Dataset used.
 - Dataset Splits:
   - **Training**: Healthy-only samples (around 10,000 observations).  
   - **Validation/Testing**: Balanced datasets (around 6,500 healthy and faulty samples each).  
 - Objective: Evaluate model performance under ideal conditions and conduct sensitivity analyses for class imbalance and referene proportions.
 
-### 2. **Operational Environment**
+#### 2. **Operational Environment**
 - Two N131/3.9MW turbines in South Netherlands
 - Datasets:
   - **Turbine 1**: A Nordex N131 turbine with a reported gearbox fault (oil leakage and bearing scratches).  
@@ -26,7 +26,7 @@ The study involves two main evaluation scenarios:
 
 ---
 
-## Methodology
+### Methodology
 
 1. **Signal Processing and Feature Extraction**:
    - Vibration data is preprocessed following ISO guidelines, including band-pass filtering, downsampling, and windowing.
@@ -44,14 +44,14 @@ The study involves two main evaluation scenarios:
 
 ---
 
-## VAE-IF Hybrid Model
+### VAE-IF Hybrid Model
 
 The VAE-IF hybrid model combines a Variational Autoencoder (VAE) and Isolation Forest (IF) for fault detection. The VAE learns a compact latent representation of healthy vibration data, organizing it into a structured probabilistic space that naturally separates anomalies. The IF then identifies outliers in this latent space by evaluating how easily a data point can be isolated. This approach adapts to noise, imbalance, and dynamic conditions, offering a flexible and robust alternative to static fault detection thresholds.
 
 <img width="1029" alt="Captura de pantalla 2025-01-22 a las 15 59 20" src="https://github.com/user-attachments/assets/5f373c14-c8b5-4768-94ab-91433e9d8731" />
 
 ---
-## Key Contributions
+### Key Contributions
 
 - **Validation of ISO 10816-21**: Examines its effectiveness in controlled and operational wind farm datasets.
 - **Hybrid Model Introduction**: Demonstrates the potential of combining VAE and IF for adaptive fault detection.
@@ -59,7 +59,7 @@ The VAE-IF hybrid model combines a Variational Autoencoder (VAE) and Isolation F
 
 ---
 
-## Results Summary
+### Results Summary
 
 - **Controlled Environment**: 
   - ISO thresholds performed well under ideal conditions.
