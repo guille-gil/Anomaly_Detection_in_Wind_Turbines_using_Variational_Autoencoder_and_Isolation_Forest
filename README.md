@@ -1,4 +1,4 @@
-# [Title Pending]
+# Navigating Operational Challenges: Combining Variational Autoencoder and Isolation Forest for Adaptive Fault Detection in Wind Turbines
 
 This repository provides the implementation of a study that evaluates static thresholds (ISO 10816-21) for vibration-based fault detection in wind turbines and compares their performance to a hybrid machine learning model combining Variational Autoencoder (VAE) and Isolation Forest (IF).
 
