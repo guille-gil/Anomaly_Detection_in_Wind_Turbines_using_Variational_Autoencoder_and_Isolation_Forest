@@ -12,21 +12,9 @@ This repository contains the implementation of a study that addresses operationa
 
 Wind turbines operate in highly dynamic environments, making static fault detection thresholds prone to inaccuracies. This study addresses these limitations by introducing a fully unsupervised VAE-IF hybrid model capable of adapting to variability in operational conditions and data characteristics, such as imbalance and noise. 
 
-The study involves two main evaluation scenarios:
-
-#### 1. **Controlled Environment**
-- NREL Wind Turbine Gearbox Vibration Condition Monitoring Benchmarking Dataset used.
-- Dataset Splits:
-  - **Training**: Healthy-only samples (around 10,000 observations).  
-  - **Validation/Testing**: Balanced datasets (around 6,500 healthy and faulty samples each).  
-- Objective: Evaluate model performance under ideal conditions and conduct sensitivity analyses for class imbalance and referene proportions.
-
-#### 2. **Operational Environment**
-- Two N131/3.9MW turbines in South Netherlands
-- Datasets:
-  - **Turbine 1**: A Nordex N131 turbine with a reported gearbox fault (oil leakage and bearing scratches).  
-  - **Turbine 2**: Another Nordex N131 turbine confirmed healthy over the same period.  
-- Objective: Test model adaptability to real-world complexities, comparing detection results with ISO-based thresholds.
+The study evaluates the model in two scenarios:
+- **Controlled Environment**: Using NREL benchmarking datasets to assess performance under ideal conditions
+- **Operational Environment**: Testing on real-world Nordex N131 turbines to validate adaptability to noise and operational variability
 
 ---
 
@@ -37,8 +25,7 @@ The study involves two main evaluation scenarios:
    - Time-domain statistical features (e.g., RMS, kurtosis, skewness) are extracted as model inputs.
 
 2. **VAE-IF Hybrid Model**:
-   - The **VAE** learns a probabilistic latent space from healthy data, compressing inputs into structured representations.
-   - The **Isolation Forest** uses the latent representations to isolate anomalies based on sparse data points.
+   - A hybrid approach combining Variational Autoencoder and Isolation Forest for adaptive anomaly detection (see dedicated section below).
 
 3. **Comparison with ISO Thresholds**:
    - The ISO 10816-21 standard provides static RMS-based vibration thresholds to detect faults.  
@@ -55,13 +42,6 @@ The VAE-IF hybrid model combines a Variational Autoencoder (VAE) and Isolation F
 <img width="1029" alt="Captura de pantalla 2025-01-22 a las 15 59 20" src="https://github.com/user-attachments/assets/5f373c14-c8b5-4768-94ab-91433e9d8731" />
 
 ---
-### Key Contributions
-
-- **Validation of ISO 10816-21**: Examines its effectiveness in controlled and operational wind farm datasets.
-- **Hybrid Model Introduction**: Demonstrates the potential of combining VAE and IF for adaptive fault detection.
-- **Real-World Applicability**: Provides insights into transitioning from static to flexible thresholds in industrial setups.
-
----
 
 ### Results Summary
 
@@ -71,6 +51,13 @@ The VAE-IF hybrid model combines a Variational Autoencoder (VAE) and Isolation F
 
 - **Operational Environment**:
   - VAE-IF detected significantly more faults than ISO thresholds, showing better adaptability to noise and real-world variability.
+
+---
+### Key Contributions
+
+- **Validates limitationsof ISO 10816-21 as anomaly detection method**: Examines its effectiveness in controlled and operational wind farm datasets.
+- **Hybrid Model Introduction**: Demonstrates the potential of combining VAE and IF for adaptive fault detection.
+- **Real-World Applicability**: Provides insights into transitioning from static to flexible thresholds in industrial setups.
 
 ---
 
