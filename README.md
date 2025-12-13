@@ -57,7 +57,7 @@ The VAE-IF hybrid model combines a Variational Autoencoder (VAE) and Isolation F
 ---
 ### Key Contributions
 
-- **Validation of ISO 10816-21**: Examines its effectiveness in controlled and operational wind farm datasets.
+- **Validates limitations of ISO 10816-21 as an anomaly detection model**: Examines its effectiveness in controlled and operational wind farm datasets.
 - **Hybrid Model Introduction**: Demonstrates the potential of combining VAE and IF for adaptive fault detection.
 - **Real-World Applicability**: Provides insights into transitioning from static to flexible thresholds in industrial setups.
 
