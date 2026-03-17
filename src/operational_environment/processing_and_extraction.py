@@ -1,23 +1,6 @@
 """
-Script for Processing Wind Turbine Vibration Data
--------------------------------------------------
-This script processes raw vibration data and other metrics (e.g., wind, status) from wind turbines.
-It extracts features like RMS, peak, kurtosis, skewness, crest factor, and impulse factor
-from adaptively sized windows, applies a band-pass filter (serving as anti-aliasing) before downsampling,
-and consolidates the results into a single Parquet file for each turbine.
-Designed for the Nordex N117/3600 wind turbines.
-
-Naming Convention:
-------------------
 To ensure proper processing, the raw data directory must follow this folder naming convention:
     <TurbineName>_<Component>_<SensorCode>
-
-Example:
-    - BOMMELERWAARD-N-88377_MainBearing_AI1
-    - BOMMELERWAARD-N-88378_GeneratorDriveEnd_AI5
-
-Author: Guillermo Gil de Avalle Bellido
-Company: Windunie
 """
 
 import os
