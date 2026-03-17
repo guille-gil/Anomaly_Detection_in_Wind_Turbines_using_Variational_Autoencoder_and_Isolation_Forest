@@ -1,5 +1,5 @@
 """
-This script is aimed at helping Windunie extract and organize the files from the Nordex/Bachmann Platform into a workable format
+This script is aimed at helping extract and organize the files from the Nordex/Bachmann Platform into a workable format
 """
 
 import os
